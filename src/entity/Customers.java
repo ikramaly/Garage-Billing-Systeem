@@ -1,6 +1,4 @@
 package entity;
-// entity means ServiceBilling proj ki kon kon si classes ho skti hai ,
-//production level pr hum alag package bna lete hai classes ka
 
 public class Customers {
     private int id;
@@ -13,35 +11,15 @@ public class Customers {
         this.phone = phone;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
 
     @Override
     public String toString() {
-        return "[ Customer id = "+id+", name = "+name+", phone = "+phone+" ] ";
-    }
-
-    public static class Invoices {
+        return "Customer{id=" + id + ", name='" + name + "', phone='" + phone + "'}";
     }
 }
